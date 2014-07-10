@@ -41,6 +41,10 @@ $('document').ready(function(){
         query(); 
         $('.queryresult').html("<u>link tag</u><br>The &lt;link&gt; tag defines the relationship between a document and an external resource.");
     });
+    $('#tag18').click(function(){ 
+        query(); 
+        $('.queryresult').html("A division with class 'hello'. This is the division by using it we are going to print 'Hello' on screen.");
+    });
     
 });
 
