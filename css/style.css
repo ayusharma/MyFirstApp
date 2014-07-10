@@ -344,7 +344,7 @@ button:hover {
     display:block;
     padding:0;
 }
-.codeinhtml,.codeincss,.codeincss2 {
+.codeinhtml,.codeincss,.codeincss2,.codeinjs {
     font-family: cursive;
     
     margin-left:auto;
@@ -358,17 +358,17 @@ button:hover {
 .codeinhtml{
     width: 270px;
 }
-.codeincss {
+.codeincss,.codeinjs {
     width:300px;
 }
 .codeincss2 {
     width: 200px;
 }
-.codeinhtml>li,.codeincss>li,.codeincss2>li {
+.codeinhtml>li,.codeincss>li,.codeincss2>li,.codeinjs>li {
     cursor: pointer;
     list-style: none;
 }
-.codeinhtml>li:hover,.codeincss>li:hover,.codeincss2>li:hover {
+.codeinhtml>li:hover,.codeincss>li:hover,.codeincss2>li:hover,.codeinjs>li:hover {
     color:#1884FF;
 }
 pre {

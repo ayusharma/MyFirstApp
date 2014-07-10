@@ -69,6 +69,18 @@ $('document').ready(function(){
         query(); 
         $('.queryresult').html("'hello' class closing paranthesis to end the class. This parannthesic end the class.");
     });
+    $('#tag31').click(function(){ 
+        query(); 
+        $('.queryresult').html("head tag of the html files.");
+    });
+    $('#tag33').click(function(){ 
+        query(); 
+        $('.queryresult').html("Integration of Javascript into our main html file.");
+    });
+    $('#tag35').click(function(){ 
+        query(); 
+        $('.queryresult').html("Closing head tag in HTML file. We've integrated the JS file in our application.");
+    });
     
 });
 
