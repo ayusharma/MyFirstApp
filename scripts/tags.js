@@ -45,6 +45,30 @@ $('document').ready(function(){
         query(); 
         $('.queryresult').html("A division with class 'hello'. This is the division by using it we are going to print 'Hello' on screen.");
     });
+    $('#tag221').click(function(){ 
+        query(); 
+        $('.queryresult').html("A CSS style with class 'hello'. We use dot (.) operator to acces the class.");
+    });
+    $('#tag222').click(function(){ 
+        query(); 
+        $('.queryresult').html("CSS class start parantesis. It starts the class to add properties such as with, height, background color etc.");
+    });
+    $('#tag223').click(function(){ 
+        query(); 
+        $('.queryresult').html(" Assign 100 Pixels width to 'hello' class.");
+    });
+    $('#tag224').click(function(){ 
+        query(); 
+        $('.queryresult').html(" Assign 100 Pixels height to 'hello' class.");
+    });
+    $('#tag225').click(function(){ 
+        query(); 
+        $('.queryresult').html(" Assign Red color to background to class 'hello' which has dimension of 100 PX x 100PX.");
+    });
+    $('#tag226').click(function(){ 
+        query(); 
+        $('.queryresult').html("'hello' class closing paranthesis to end the class. This parannthesic end the class.");
+    });
     
 });
 
