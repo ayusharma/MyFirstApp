@@ -768,22 +768,6 @@ pre > span {
     z-index: 1;
     opacity: 0;
 }
-/*.rotate {
-	-webkit-transform:rotateY(-90deg);
-	-webkit-transition:all 1s;
-	-webkit-transform-origin:left;
-	-webkit-transform:rotateY(-90deg);
-	-webkit-transition:all 1s;
-	-webkit-transform-origin:left;
-}
-.rerotate {
-	-webkit-transform:rotateY(0deg);
-	-webkit-transition:all 1s;
-	-webkit-transform-origin:left;
-	-webkit-transform:rotateY(0deg);
-	-webkit-transition:all 1s;
-	-webkit-transform-origin:left;
-}*/
 .back {
 	width:100%;
 	height:50px;
