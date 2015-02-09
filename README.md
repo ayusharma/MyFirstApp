@@ -1,9 +1,15 @@
-MyFirstApp
-==========
+How to code for Firefox OS (in dev)
 
-A repository to maintain the source code of my first app.
+URL: http://pixelcount.net/firefox/MyFirstApp/
 
-I am developing this app for the Firefox OS. The app has basic introduction of the web app develop technologies 
-like HTML , CSS , JS , Designing Tools and Publish.
+This application has five staes which teach user to code in web technologies and get familiar the fundamental strucuture of them.
 
-ayush.aceit@gmail.com
+Technology Used: HTML5 CSS3 jQuery GNU/Linux Digital Ocean as VPS GIMP
+
+For further queries do not hesitate to contact me.
+
+Ayush Sharma Arya College Of Engineering & IT, Jaipur India.
+
+contact details: ayush.aceit@gmail.com
+
+IRC: ayushpix
