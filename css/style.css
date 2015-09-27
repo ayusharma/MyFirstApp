@@ -10,7 +10,7 @@ body {
     user-select: none;
 	margin:0;
 	padding:0;
-	background-color:#f60;
+	/*background-color:#f60;*/
 	min-width:320px;
 	max-width:100vw;
 	max-height:100vh;
@@ -21,6 +21,21 @@ body {
 	perspective:600px;	
 	overflow:hidden;
 	z-index:0;
+    font-family: 'Signika', sans-serif;
+}
+.blur-div {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background-image:url(../images/fo.jpg);
+    background-position:left center;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    z-index: 2;
+    -webkit-filter: blur(6px);
+}
+.display-none {
+    display: none;
 }
 a:link{
     color:#4810FF;
@@ -45,7 +60,7 @@ a:active{
     position:fixed;
     width:100vw;
     height:100vh;
-    background-color:rgba(51, 51, 51, 0.9); 
+    /*background-color:rgba(51, 51, 51, 0.9); */
     top:0;
     bottom:0;
     z-index:11;
@@ -59,7 +74,7 @@ a:active{
     left:50%;
     margin-top: -80px;
     margin-left: -130px;
-    background-color: #333;
+    /*background-color: #333;*/
     border-width:5px;
     border-style:solid;
     border-radius:15px;
@@ -71,7 +86,7 @@ button {
     display: block;
     width:100px;
     padding:10px;
-    font-family:cursive;
+    /*font-family:cursive;*/
     font-size:12px;
     padding-top:6px;
     padding-bottom:6px;
@@ -86,15 +101,15 @@ button {
     -ms-transition: background-color 0.5s linear;
 }
 button:hover {
-            background-color: #488DF0;
-            color:#fff;
+    background-color: #488DF0;
+    color:#fff;
 }
 .queryresult{
     width:230px;
     height:80px;
     padding: 10px;
-    background-color: #333;
-    font-family:cursive;
+    /*background-color: #333;*/
+    /*font-family:cursive;*/
     color:#fff;
     text-align: center;
     font-weight: bold;
@@ -109,35 +124,55 @@ button:hover {
 	top:0;
 	left:0;
 	z-index:7;
-	background-image:url(../images/background.jpg);
-	background-position:left center;
-	background-size: 100% 100%;
-	background-repeat:no-repeat;
     -webkit-transition: all 1s;
     -webkit-transform-origin:left;
 	
 	
+}
+/*.container > .content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(255, 255, 255, 0.1);
+  width: inherit;
+  height: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  z-index: 0;
+  transform: scale(2) translateY(20px);
+
+
+}*/
+* {
+    -webkit-touch-callout: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .content {
 	width:80%;
 	margin-left:auto;
 	margin-right:auto;
 	height:30%;
-	background-color:rgba(0, 0, 0, 1.0);
-    -webkit-touch-callout: none;
-     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	
     border:0;
-    border-radius:10px;
+    border-radius:2px;
     overflow: hidden;
+    background-color:rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 2px #333;
+    /*transform: scale(1.1);*/
 }
+
 .html,.js,.css,.design,.app,.intro{
 	width:16.6666666667%;
 	height:100%;
+    /*-webkit-filter: blur(3px);
+    filter: blur(3px);*/
 	background-position:center center;
 	background-size: 80px 80px;
 	background-repeat:no-repeat;
@@ -149,16 +184,23 @@ button:hover {
     -webkit-transition:background-color 0.3s linear;
 }
 .html:hover,.js:hover,.css:hover,.design:hover,.app:hover {
-    background-color: #1884FF;
-    -webkit-transform:scale(1.1);
+    /*background-color: #1884FF;*/
+    -webkit-transform:scale(1.4);
+     -webkit-transition:all 0.3s linear;
 }
 .intro p {
-    font-family:cursive;
-    font-size:22px;
+    
+    
+    font-size:30px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
     color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px #333;
+
 }
 
 .html{
@@ -171,13 +213,13 @@ button:hover {
 	background-image:url(../images/js.png);
 }
 .design{
-	background-image:url(../images/graphics.png);
+	background-image:url(../images/gimp.png);
 }
 .app{
 	background-image:url(../images/app.png);
 }
 .htmlInfo,.cssInfo,.jsInfo,.appInfo,.designInfo {
-     -webkit-perspective:600px;
+    -webkit-perspective:600px;
 	-webkit-perspective:600px;
 	-ms-perspective:600px;
 	-o-perspective:600px;
@@ -192,12 +234,12 @@ button:hover {
 	z-index:5;
 	top:0;
 	left:0;
-	background-color:#000;
+	/*background-color:#000;*/
     overflow: hidden;
    
 }
 .cssInfo {
-	background-color:red;
+	/*background-color:red;*/
 	width:100vw;
 	height:100vh;
 	position:absolute;
@@ -211,7 +253,7 @@ button:hover {
 	
 }
 .jsInfo {
-	background-color:green;
+	/*background-color:green;*/
 	width:100vw;
 	height:100vh;
 	position:absolute;
@@ -225,7 +267,7 @@ button:hover {
 	
 }
 .designInfo {
-	background-color:yellow;
+	/*background-color:yellow;*/
 	width:100vw;
 	height:100vh;
 	position:absolute;
@@ -239,7 +281,7 @@ button:hover {
 	
 }
 .appInfo {
-	background-color:orange;
+	/*background-color:orange;*/
 	width:100vw;
 	height:100vh;
 	position:absolute;
@@ -264,7 +306,7 @@ button:hover {
     position:absolute;
     top:0;
     left:0;
-    background-color: #fff;
+    /*background-color: #fff;*/
     -webkit-transition: all 1s;
     -webkit-transform-origin:left;
     -webkit-backface-visibility: hidden;
@@ -299,11 +341,12 @@ button:hover {
 .text>p {
     display: table-cell;
     vertical-align: middle;
-    font-family:cursive;
-	font-size:18px;
-	font-weight:normal;
-	color:#000;
+/*    font-family:cursive;
+*/	font-size:38px;
+	font-weight:bold;
+	color:#FFF;
 	text-align:center;
+    letter-spacing: 2px;
     -webkit-transition: font-size 0.2s linear;
 }
 .html2>.text>p {
@@ -317,8 +360,10 @@ button:hover {
 }
 .text > ul >li {
     width:100%;
-    font-family:cursive;
-	font-size:18px;
+    /*font-family:cursive;*/
+	font-size:28px;
+    letter-spacing: 1px;
+    line-height: 35px;
 	font-weight:normal;
 	color:#fff;
     text-align: center;
@@ -326,12 +371,13 @@ button:hover {
     padding-top:10px;
     padding-bottom:10px;
     list-style: none;
+    text-shadow: 2px 1px #333;
 }
 .text> .code {
     margin: auto;
     display: table-cell;
     vertical-align: middle;
-    font-family:cursive;
+    /*font-family:cursive;*/
 	font-size:18px;
 	font-weight:normal;
 }
@@ -345,15 +391,14 @@ button:hover {
     padding:0;
 }
 .codeinhtml,.codeincss,.codeincss2,.codeinjs,.codeinjs2 {
-    font-family: cursive;
-    
+    /*font-family: cursive;  */
     margin-left:auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
     display:block;
     padding:0;
-    background-color:#ccc;
+    /*background-color:#ccc;*/
 }
 .codeinhtml{
     width: 270px;
@@ -379,7 +424,7 @@ pre {
     font-size: 16px;
 }
 pre > span {
-    font-family:cursive;
+    /*font-family:cursive;*/
 	font-size:18px;
 	font-weight:normal;
 }
@@ -391,7 +436,7 @@ pre > span {
     right: 0;
     margin: 10px;
     padding: 20px;
-    font-family:cursive;
+    /*font-family:cursive;*/
 	font-size:38px;
     color:#1884FF;
     background-color:#333;
@@ -399,10 +444,10 @@ pre > span {
     border:0;
 }
 .tap,.tapcss,.tapcss2,.tapjs,.tapjs2,.tapdesign,.tapdesign2,.tapapp,.tapapp2 {
-    font-family:cursive;
-    padding: 8px;
+    /*font-family:cursive;*/
+    padding: 18px;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
@@ -487,7 +532,7 @@ pre > span {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    font-family:cursive;
+    /*font-family:cursive;*/
 	font-size:5px;
 	font-weight:normal;
     color:#000;
@@ -541,7 +586,7 @@ pre > span {
     background-image: url(../images/bubble.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    font-family:cursive;
+    /*font-family:cursive;*/
     color:#2364B0;
     font-size: 18px;
     padding-top:35px;
@@ -787,7 +832,7 @@ pre > span {
 .back {
 	width:100%;
 	height:50px;
-	background-color:#fff;
+	/*background-color:#fff;*/
 	position:absolute;
 	bottom:0;
 	padding-bottom:10px;
@@ -804,7 +849,7 @@ pre > span {
     height: 30px;
     padding:10px;
 	cursor:pointer;
-	font-family:arial;
+	/*font-family:arial;*/
 	font-size:14px;
 	font-weight:bold;
 	color:#fff;

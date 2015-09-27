@@ -7,7 +7,7 @@ $(window).load(function () {
 $('document').ready(function () {
 	var t = (($(window).height()-$('.content').height())/2);
 	$('.content').css('margin-top',t);
-	var h = $(window).height()-$('.back').height()-10;
+	var h = $(window).height();
 	$('.html1,.html2,.html3,.html4,.html5,.text').css('height',h);
     
 });
@@ -16,7 +16,7 @@ $(window).resize(function (){
 	$('.container').css('-webkit-transition','none');
 	var t = (($(window).height()-$('.content').height())/2);
 	$('.content').css('margin-top',t);
-	var h = $(window).height()-$('.back').height()-10;
+	var h = $(window).height();
 	$('.html1,.html2,.html3,.html4,.html5,.text').css('height',h);
 });
 $('document').ready(function(){
@@ -59,7 +59,7 @@ $('document').ready(function(){
      });
    
     $('.html').click(function(){		
-		$('.htmlInfo').css('display','block');
+		$('.htmlInfo').slideDown(1000);
 		$('.container').css('-webkit-transform','rotateY(-90deg)');
         $('.container').css('-webkit-transition','all 1s');
         $('.container').css('-webkit-transform-origin','left');
