@@ -83,28 +83,19 @@ a:active{
     overflow: hidden;
 }
 button {
-    margin: auto;
-    display: block;
-    width:100px;
-    padding:10px;
-    /*font-family:cursive;*/
-    font-size:12px;
-    padding-top:6px;
-    padding-bottom:6px;
-    border-width:1px;
-    border-style:solid;
-    border-radius:5px;
-    border-color:#333;
-    cursor:pointer;
-    -webkit-transition: background-color 0.5s linear;
-    -webkit-transition: background-color 0.5s linear;
-    -o-transition: background-color 0.5s linear;
-    -ms-transition: background-color 0.5s linear;
+
+    padding: 18px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    line-height: 24px;
+    /*min-width: 200px;*/
+    font-weight:bold;
 }
-button:hover {
-    background-color: #488DF0;
-    color:#fff;
-}
+
 .queryresult{
     width:230px;
     height:80px;
@@ -117,35 +108,6 @@ button:hover {
     font-size:12px;
     line-height: 22px;
 }
-/*.container {
-	width:100vw;
-	height:100vh;
-	background-color:#000;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:7;
-    -webkit-transition: all 1s;
-    -webkit-transform-origin:left;
-	
-	
-}*/
-/*.container > .content::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color:rgba(255, 255, 255, 0.1);
-  width: inherit;
-  height: inherit;
-  background-attachment: fixed;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-  z-index: 0;
-  transform: scale(2) translateY(20px);
-
-
-}*/
 * {
     -webkit-touch-callout: none;
     -webkit-touch-callout: none;
@@ -429,7 +391,7 @@ pre {
     font-size: 16px;
 }
 pre > span {
-    /*font-family:cursive;*/
+    font-family:cursive;
 	font-size:18px;
 	font-weight:normal;
 }
@@ -448,8 +410,8 @@ pre > span {
     border-radius:0;
     border:0;
 }
-.tap,.tapcss,.tapcss2,.tapjs,.tapjs2,.tapdesign,.tapdesign2,.tapapp,.tapapp2 {
-    /*font-family:cursive;*/
+/*.tap,.tapcss,.tapcss2,.tapjs,.tapjs2,.tapdesign,.tapdesign2,.tapapp,.tapapp2 {
+    font-family:cursive;
     padding: 18px;
     color: #fff;
     font-size: 16px;
@@ -457,7 +419,10 @@ pre > span {
     border-radius: 5px;
     cursor: pointer;
     background-color: #333;
-}
+    line-height: 24px;
+    min-width: 200px;
+    font-weight:bold;
+}*/
 .tap,.tapcss,.tapjs,.tapdesign,.tapapp {
      -webkit-animation:tapping 2s linear infinite;
 }
@@ -500,12 +465,12 @@ pre > span {
     width: 200px;
     height: 90px;
     background-image:url(../images/hat.png);
-	background-position:center top;
+	background-position:left top;
 	background-size: 200px 90px;
 	background-repeat:no-repeat;
     position: absolute;
     z-index: 2;
-    bottom:0;
+    bottom:30px;
     margin-bottom: 60px;
     left:50%;
     margin-left:-100px;
@@ -615,7 +580,7 @@ pre > span {
     position:absolute;
     left:50%;
     margin-left: -105px;
-    bottom:150px;
+    bottom:250px;
     display: none;
 }
 .app_middle {
@@ -835,12 +800,13 @@ pre > span {
 	-webkit-transform-origin:left;
 }*/
 .back {
-	width:100%;
+	width:100px;
 	height:50px;
 	/*background-color:#fff;*/
 	position:absolute;
-	bottom:0;
-	padding-bottom:10px;
+	left:20px;
+    top:20px;
+	/*padding-bottom:10px;*/
     z-index: 29;
 }
 /*.buttons {
@@ -860,8 +826,8 @@ pre > span {
 	font-weight:bold;
 	color:#fff;
 	text-align:center;
-	background-color:#333;
-	border:0;
+	/*background-color:;*/
+	border:1px solid #333;
 	border-radius:50%;
 	/*float:left;*/
 	overflow:hidden;
