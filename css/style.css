@@ -1,6 +1,6 @@
 /*css document*/
 
-body {
+body,html {
     -webkit-touch-callout: none;
      -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -10,10 +10,11 @@ body {
     user-select: none;
 	margin:0;
 	padding:0;
+
 	/*background-color:#f60;*/
 	min-width:320px;
-	max-width:100vw;
-	max-height:100vh;
+	width:100%;
+	height:100%;
 	-webkit-perspective:600px;
 	-webkit-perspective:600px;
 	-ms-perspective:600px;
@@ -31,7 +32,7 @@ body {
     background-position:left center;
     background-size: 100% 100%;
     background-repeat:no-repeat;
-    z-index: 2;
+    z-index: -3;
     -webkit-filter: blur(6px);
 }
 .display-none {
@@ -116,10 +117,10 @@ button:hover {
     font-size:12px;
     line-height: 22px;
 }
-.container {
+/*.container {
 	width:100vw;
 	height:100vh;
-/*	background-color:#000;*/
+	background-color:#000;
 	position:absolute;
 	top:0;
 	left:0;
@@ -128,7 +129,7 @@ button:hover {
     -webkit-transform-origin:left;
 	
 	
-}
+}*/
 /*.container > .content::after {
   content: "";
   position: absolute;
@@ -159,12 +160,16 @@ button:hover {
 	margin-left:auto;
 	margin-right:auto;
 	height:30%;
-	
+	/*margin-top:;*/
+    position: absolute;
+   /* top:50%;
+    left:;*/
+    z-index:30;
     border:0;
     border-radius:2px;
     overflow: hidden;
     background-color:rgba(255, 255, 255, 0.1);
-    box-shadow: 1px 1px 2px #333;
+    box-shadow: 0px 0px 2px #333;
     /*transform: scale(1.1);*/
 }
 
@@ -836,17 +841,18 @@ pre > span {
 	position:absolute;
 	bottom:0;
 	padding-bottom:10px;
-    z-index: 5;
+    z-index: 29;
 }
-.buttons {
-	width:120px;
+/*.buttons {
+	width:0px;
     height:50px;
 	margin:auto;
 	background-color:#fff;
-}
-.main_button,.back_button,.next_button {
+}*/
+.main_button {
 	width:30px;
     height: 30px;
+    margin:auto;
     padding:10px;
 	cursor:pointer;
 	/*font-family:arial;*/
@@ -857,20 +863,20 @@ pre > span {
 	background-color:#333;
 	border:0;
 	border-radius:50%;
-	float:left;
+	/*float:left;*/
 	overflow:hidden;
      -webkit-transition:background-color 0.3s linear;
 }
-.main_button:hover,.back_button:hover,.next_button:hover {
+.main_button:hover {
     background-color: #000;
 }
-.main_button {
+/*.main_button {
 	
 	margin-right:10px;
 }
 .next_button{
     margin-left:10px;
-}
+}*/
 @media only screen and (max-width:710px) and (min-height:320px){
 	body {
 		background-color:#575757;
@@ -972,4 +978,26 @@ pre > span {
     .html,.js,.css,.design,.app,.intro {
         background-size: 40px 40px;
     }
+}
+
+
+
+
+/*Adding a flip class*/
+
+.flip-page {
+    -webkit-transition: all 1s linear;
+    -webkit-transform:translate(-2000px);
+}
+.flip-back {
+   -webkit-transition: all 1s linear;
+   -webkit-transform:translate(0px);
+}
+.flip-page-child {
+    -webkit-transition: all 1s linear;
+    -webkit-transform:translate(2000px);
+}
+.flip-back-child {
+   -webkit-transition: all 1s linear;
+   -webkit-transform:translate(0px);
 }

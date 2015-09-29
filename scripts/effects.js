@@ -6,122 +6,71 @@ $(window).load(function () {
 
 $('document').ready(function () {
 	var t = (($(window).height()-$('.content').height())/2);
-	$('.content').css('margin-top',t);
+    var l = (($(window).width()-$('.content').width())/2);
+	$('.content').css('top',t).css('left',l);
 	var h = $(window).height();
 	$('.html1,.html2,.html3,.html4,.html5,.text').css('height',h);
     
 });
 
 $(window).resize(function (){
-	$('.container').css('-webkit-transition','none');
 	var t = (($(window).height()-$('.content').height())/2);
-	$('.content').css('margin-top',t);
-	var h = $(window).height();
-	$('.html1,.html2,.html3,.html4,.html5,.text').css('height',h);
+    var l = (($(window).width()-$('.content').width())/2);
+    $('.content').css('top',t).css('left',l);
+    var h = $(window).height();
+    $('.html1,.html2,.html3,.html4,.html5,.text').css('height',h);
 });
 $('document').ready(function(){
 	var n=1;
     if(n==1){
         $('.back_button').css('display','none');
     }
-	
-    $('.next_button').click(function(){
-        var audio = $('.flip')[0];
-        audio.play();
-        if(n==1){
-            
-        }
-        if(n<5){
-            $('.back_button').css('display','block');
-            $('.buttons').css('width',170);
-            $('.htmlInfo>div:nth-child('+n+'),.cssInfo>div:nth-child('+n+'),.jsInfo>div:nth-child('+n+'),.designInfo>div:nth-child('+n+'),.appInfo>div:nth-child('+n+')').css('-webkit-transform','rotateY(-90deg)');
-            n=n+1;
-            if(n==5){
-                $('.next_button').css('display','none');
-                $('.buttons').css('width',120);
-            }
-        }
-	});
-	
-    $('.back_button').click(function(){
-            var audio = $('.flip')[0];
-            audio.play();
-            if(n<=5){
-            $('.next_button').css('display','block');
-            $('.buttons').css('width',170);
-            n=n-1;
-            $('.htmlInfo>div:nth-child('+n+'),.cssInfo>div:nth-child('+n+'),.jsInfo>div:nth-child('+n+'),.designInfo>div:nth-child('+n+'),.appInfo>div:nth-child('+n+')').css('-webkit-transform','rotateY(0deg)');
-            if(n==1){
-                $('.back_button').css('display','none');
-                $('.buttons').css('width',120);
-            }  
-            }
-     });
-   
+
+   $('.htmlInfo,.cssInfo,.jsInfo,.designInfo,.appInfo').addClass('flip-page-child');
     $('.html').click(function(){		
-		$('.htmlInfo').slideDown(1000);
-		$('.container').css('-webkit-transform','rotateY(-90deg)');
-        $('.container').css('-webkit-transition','all 1s');
-        $('.container').css('-webkit-transform-origin','left');
-        var audio = $('.flip')[0];
-        audio.play();
-        if(n==1){
-            $('.back_button').css('display','none');
-            $('.next_button').css('display','block');
-            $('.buttons').css('width',120);
-        }
+		$('.htmlInfo').fadeIn(800);
+		$('.back').css('display','block')
+        $('.content').removeClass('flip-back').addClass('flip-page'); 
+        $('.htmlInfo').removeClass('flip-page-child').addClass('flip-back-child');      
 	});
+
 	
     $('.css').click(function(){
-		$('.htmlInfo,.cssInfo').css('display','block');
-		$('.container').css('-webkit-transform','rotateY(-90deg)');
-        $('.container').css('-webkit-transition','all 1s');
-        $('.container').css('-webkit-transform-origin','left');
-		$('.htmlInfo').css('display','none');
-        var audio = $('.flip')[0];
-        audio.play();
-        if(n==1){
-            $('.back_button').css('display','none');
-            $('.next_button').css('display','block');
-            $('.buttons').css('width',120);
-        }
+	    $('.cssInfo').fadeIn(800);
+        $('.back').css('display','block')
+        $('.content').removeClass('flip-back').addClass('flip-page'); 
+        $('.cssInfo').removeClass('flip-page-child').addClass('flip-back-child'); 
+       
 	});
-	$('.js').click(function(){
-		$('.htmlInfo,.cssInfo,.jsInfo').css('display','block');
-		$('.container').css('-webkit-transform','rotateY(-90deg)');
-        $('.container').css('-webkit-transition','all 1s');
-        $('.container').css('-webkit-transform-origin','left');
-		$('.htmlInfo,.cssInfo').css('display','none');
-        var audio = $('.flip')[0];
-        audio.play();
-	});
+
+    $('.js').click(function(){
+        $('.jsInfo').fadeIn(800);
+        $('.back').css('display','block')
+        $('.content').removeClass('flip-back').addClass('flip-page'); 
+        $('.jsInfo').removeClass('flip-page-child').addClass('flip-back-child'); 
+       
+    });
+	
 	$('.design').click(function(){
-		$('.htmlInfo,.cssInfo,.jsInfo,.designInfo').css('display','block');
-		$('.container').css('-webkit-transform','rotateY(-90deg)');
-        $('.container').css('-webkit-transition','all 1s');
-        $('.container').css('-webkit-transform-origin','left');
-		$('.htmlInfo,.cssInfo,.jsInfo').css('display','none');
-        var audio = $('.flip')[0];
-        audio.play();
-	});
-	$('.app').click(function(){
-		//resize();
-		$('.container').addClass('rotate');
-		$('.container').css('-webkit-transform','rotateY(-90deg)');
-		$('.htmlInfo,.cssInfo,.jsInfo,.designInfo').css('display','none');
-        $('.container').css('-webkit-transition','all 1s');
-        $('.container').css('-webkit-transform-origin','left');
-        var audio = $('.flip')[0];
-        audio.play();
-	});
+        $('.designInfo').fadeIn(800);
+        $('.back').css('display','block')
+        $('.content').removeClass('flip-back').addClass('flip-page'); 
+        $('.designInfo').removeClass('flip-page-child').addClass('flip-back-child'); 
+       
+    });
+
+    $('.app').click(function(){
+        $('.appInfo').fadeIn(800);
+        $('.back').css('display','block')
+        $('.content').removeClass('flip-back').addClass('flip-page'); 
+        $('.appInfo').removeClass('flip-page-child').addClass('flip-back-child'); 
+       
+    });
+	
 	$('.main_button').click(function(){		
-		$('.container').css('-webkit-transform','rotateY(0deg)');
-        $('.htmlInfo>div,.cssInfo>div,.jsInfo>div,.designInfo>div,.appInfo>div').css('-webkit-transform','rotateY(0deg)');
-        $('.container').css('-webkit-transition','all 1s');
-        $('.container').css('-webkit-transform-origin','left');
-        n=1;
-        var audio = $('.flip')[0];
-        audio.play();
+        $('.back').css('display','none');
+        $('.content').removeClass('flip-page').addClass('flip-back');
+        $('.htmlInfo,.cssInfo,.jsInfo,.designInfo,.appInfo').removeClass('flip-back-child').addClass('flip-page-child');   
 	});
 });
  
