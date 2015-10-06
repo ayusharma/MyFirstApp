@@ -1,6 +1,6 @@
 How to code for Firefox OS (in dev)
 
-URL: http://pixelcount.net/firefox/MyFirstApp/
+URL: http://ayusharma.in/magicalstack/
 
 This application has five staes which teach user to code in web technologies and get familiar the fundamental strucuture of them.
 
