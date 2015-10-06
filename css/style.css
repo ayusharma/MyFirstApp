@@ -669,10 +669,10 @@ button {
     top:0px;
     left:101px;
     -webkit-transform: rotate(-240deg);
-    -moz-transform: rotate(-120deg);
-    -o-transform: rotate(-120deg);
-    -ms-transform: rotate(-120deg);
-    transform: rotate(-120deg);
+    -moz-transform: rotate(-240deg);
+    -o-transform: rotate(-240deg);
+    -ms-transform: rotate(-240deg);
+    transform: rotate(-240deg);
 }
 .edge5 {
     top:51.9615242px;
