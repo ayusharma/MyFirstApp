@@ -2,7 +2,7 @@
 
 body,html {
     -webkit-touch-callout: none;
-     -webkit-touch-callout: none;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -57,11 +57,11 @@ a:active{
 	-ms-transition: none !imporant;
 	transition: none !imporant;
 }
-.query {
+/*.query {
     position:fixed;
     width:100vw;
     height:100vh;
-    /*background-color:rgba(51, 51, 51, 0.9); */
+    background-color:rgba(51, 51, 51, 0.9); 
     top:0;
     bottom:0;
     z-index:11;
@@ -75,13 +75,13 @@ a:active{
     left:50%;
     margin-top: -80px;
     margin-left: -130px;
-    /*background-color: #333;*/
+    background-color: #333;
     border-width:5px;
     border-style:solid;
     border-radius:15px;
     border-color:#B0BFB2;
     overflow: hidden;
-}
+}*/
 button {
 
     padding: 18px;
@@ -96,18 +96,18 @@ button {
     font-weight:bold;
 }
 
-.queryresult{
+/*.queryresult{
     width:230px;
     height:80px;
     padding: 10px;
-    /*background-color: #333;*/
-    /*font-family:cursive;*/
+    background-color: #333;
+    font-family:cursive;
     color:#fff;
     text-align: center;
     font-weight: bold;
     font-size:12px;
     line-height: 22px;
-}
+}*/
 * {
     -webkit-touch-callout: none;
     -webkit-touch-callout: none;
@@ -134,6 +134,28 @@ button {
     box-shadow: 0px 0px 2px #333;
     /*transform: scale(1.1);*/
 }
+.git {
+    /*width:200px;*/
+    width:74px;
+    margin-left:-37px;
+    position: absolute;
+    padding: 20px;
+    text-decoration: none;
+    color:#333;
+    bottom:0px;
+    text-align: center;
+    left:50%;
+    z-index:30;
+    border:0;
+    margin-bottom: 20px;
+    border-radius:2px;
+    overflow: hidden;
+    font-size: 40px;
+    background-color:rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 2px #333;
+    /*display: none;*/
+    /*transform: scale(1.1);*/
+}
 
 .html,.js,.css,.design,.app,.intro{
 	width:16.6666666667%;
@@ -153,7 +175,7 @@ button {
 .html:hover,.js:hover,.css:hover,.design:hover,.app:hover {
     /*background-color: #1884FF;*/
     -webkit-transform:scale(1.4);
-     -webkit-transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
 }
 .intro p {
     
@@ -340,11 +362,11 @@ button {
     list-style: none;
     text-shadow: 2px 1px #333;
 }
-.text> .code {
+/*.text> .code {
     margin: auto;
     display: table-cell;
     vertical-align: middle;
-    /*font-family:cursive;*/
+    font-family:cursive;
 	font-size:18px;
 	font-weight:normal;
 }
@@ -358,14 +380,14 @@ button {
     padding:0;
 }
 .codeinhtml,.codeincss,.codeincss2,.codeinjs,.codeinjs2 {
-    /*font-family: cursive;  */
+    font-family: cursive;  
     margin-left:auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
     display:block;
     padding:0;
-    /*background-color:#ccc;*/
+    background-color:#ccc;
 }
 .codeinhtml{
     width: 270px;
@@ -394,7 +416,7 @@ pre > span {
     font-family:cursive;
 	font-size:18px;
 	font-weight:normal;
-}
+}*/
 .page {
     position: absolute;
     width:auto;
@@ -471,7 +493,7 @@ pre > span {
     position: absolute;
     z-index: 2;
     bottom:30px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     left:50%;
     margin-left:-100px;
     display: none;
@@ -487,7 +509,7 @@ pre > span {
     position: absolute;
     z-index: 1;
     bottom:0;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     left:50%;
     margin-left:-50px;
     display: none;
@@ -556,7 +578,6 @@ pre > span {
     background-image: url(../images/bubble.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /*font-family:cursive;*/
     color:#2364B0;
     font-size: 18px;
     padding-top:35px;
@@ -576,7 +597,6 @@ pre > span {
 .design_middle,.app_middle {
     width:210px;
     height:210px;
-/*background-color: yellow;*/
     position:absolute;
     left:50%;
     margin-left: -105px;
@@ -590,6 +610,7 @@ pre > span {
     background-image: url(../images/osbg.png);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 100%;
 }
 #pencil {
     position: absolute;
@@ -735,7 +756,6 @@ pre > span {
     overflow: hidden;
     position: relative;
     top:30px;
-/*    background-color:green;*/
     left:0px;
 }
 #soccer_ball {
@@ -802,47 +822,31 @@ pre > span {
 .back {
 	width:100px;
 	height:50px;
-	/*background-color:#fff;*/
 	position:absolute;
 	left:20px;
     top:20px;
-	/*padding-bottom:10px;*/
     z-index: 29;
 }
-/*.buttons {
-	width:0px;
-    height:50px;
-	margin:auto;
-	background-color:#fff;
-}*/
+
 .main_button {
 	width:30px;
     height: 30px;
     margin:auto;
     padding:10px;
 	cursor:pointer;
-	/*font-family:arial;*/
 	font-size:14px;
 	font-weight:bold;
 	color:#fff;
 	text-align:center;
-	/*background-color:;*/
 	border:1px solid #333;
 	border-radius:50%;
-	/*float:left;*/
 	overflow:hidden;
      -webkit-transition:background-color 0.3s linear;
 }
 .main_button:hover {
     background-color: #000;
 }
-/*.main_button {
-	
-	margin-right:10px;
-}
-.next_button{
-    margin-left:10px;
-}*/
+
 @media only screen and (max-width:710px) and (min-height:320px){
 	body {
 		background-color:#575757;
