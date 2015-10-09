@@ -578,7 +578,7 @@ button {
     position:absolute;
     left:50%;
     margin-left: -105px;
-    bottom:10px;
+    /*bottom:10px;*/
     display: none;
 }
 .app_middle {
