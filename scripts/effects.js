@@ -113,10 +113,11 @@ $('document').ready(function(){
     $('.tapcss2').click(function(){
         r = 1;
         if($(window).height()<523){
-        $('.smoke').delay(2000).animate({bottom:70},2000,function(){$('.smoke').css('-webkit-transform','scale(3,3)').css('margin-top',0);var audio = $('.magic')[0];
+        $('.smoke').delay(2000).animate({bottom:120},2000,function(){$('.smoke').addClass('add-smoke');
+            var audio = $('.magic')[0];
         audio.play();}).css('display','table');
         }else{
-            $('.smoke').delay(2000).animate({bottom:200},2000,function(){$('.smoke').css('-webkit-transform','scale(4,4)').css('margin-top',0); var audio = $('.magic')[0];
+            $('.smoke').delay(2000).animate({bottom:200},2000,function(){$('.smoke').addClass('add-smoke'); var audio = $('.magic')[0];
         audio.play();}).css('display','table');
         }
         $('#wand').addClass('wandanim');
