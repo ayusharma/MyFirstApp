@@ -2,10 +2,10 @@
   "version": "1.0",
   "name": "Magics",
   "description": "Nagical Firefox Stack",
-  "launch_path": "/index.html",
+  "launch_path": "/magicalstack/index.html",
   "icons": {
-    "128": "images/app.png",
-    "60": "images/css3.png"
+    "128": "/magicalstack/images/app.png",
+    "60": "/magicalstack/images/css3.png"
   },
   "developer": {
     "name": "Ayush Sharma",
