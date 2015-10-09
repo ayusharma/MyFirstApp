@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "name": "Magics",
-  "description": "Nagical Firefox Stack",
+  "name": "Firefox OS",
+  "description": "Firefox OS Technology Stack with interactive web animations",
   "launch_path": "/magicalstack/index.html",
   "icons": {
-    "128": "/magicalstack/images/app.png",
-    "60": "/magicalstack/images/css3.png"
+    "128": "/magicalstack/images/applogo.png",
+    "60": "/magicalstack/images/applogo60.png"
   },
   "developer": {
     "name": "Ayush Sharma",
