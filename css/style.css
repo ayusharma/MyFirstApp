@@ -1033,6 +1033,9 @@ button {
     margin-bottom: 35px;
     margin-left:-25px;
     }
+    .design_middle {
+        top:30px;
+    }
     .tapcss2{
         -webkit-transform: scale(0.8,0.8);
         -moz-transform: scale(0.8,0.8);
