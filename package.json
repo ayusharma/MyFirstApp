@@ -1,0 +1,27 @@
+{
+  "name": "my-first-app",
+  "version": "1.0.0",
+  "description": "A simple css-js based web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayusharma/MyFirstApp.git"
+  },
+  "keywords": [
+    "Firefox",
+    "mozilla"
+  ],
+  "author": "Ayush Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayusharma/MyFirstApp/issues"
+  },
+  "homepage": "https://github.com/ayusharma/MyFirstApp#readme",
+  "dependencies": {
+    "express": "4.14.0",
+    "path": "0.12.7"
+  }
+}
